@@ -3,9 +3,7 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
-            int hvorMangeFolk = 0;
-
+        {  
             Deltaker gytis = new Deltaker();
             gytis.Navn = "Gytis";
             gytis.Age = 24;
@@ -19,14 +17,6 @@
             gytis.PresenterDeltaker();
             miguel.PresenterDeltaker();
 
-            List<Deltaker> participants = new List<Deltaker>();
-            participants.Add(miguel);
-            participants.Add(gytis);
-
-            foreach (Deltaker d in participants)
-            {
-                hvorMangeFolk++;
-            }
             Console.ReadLine();
           
         }
